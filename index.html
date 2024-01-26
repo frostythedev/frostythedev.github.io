@@ -1,75 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>frostythedev's Website</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/countdown-timer.css">
-    <link rel="stylesheet" href="assets/css/countdown-timer1.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Reddit UI Survey</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:rgb(241,241,241);">
-            <div class="container"><a class="navbar-brand" href="#">frostythedev</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link text-capitalize text-primary active" href="/index.html"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:black;"><i class="icon ion-person"></i>&nbsp;About</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html" style="color:black;"><i class="fa fa-pencil"></i>&nbsp;Projects</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="resume.html" style="color:black;"><i class="fa fa-newspaper-o"></i>&nbsp;Resume</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="resume.html" style="color:black;"><i class="icon ion-email"></i>&nbsp;Contact</a></li>
-                    </ul><span class="navbar-text actions"> </span></div>
-            </div>
-        </nav>
-        <h1 class="text-center">Tevin</h1>
-        <h3 class="text-center">Java &amp; Web Developer</h3>
-    </div><img class="rounded-circle img-fluid center-block" src="assets/img/my-avatar.jpg" width="250px" height="250px">
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Spigot Development</a></li>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Social Media Marketing</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>VisionCoding LLC</h3>
-                        <p>Copyright VisionCoding LLC&nbsp;<i class="fa fa-copyright"></i></p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="http://twitter.com/frostythedev"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="http://instagram.com/tevinnnnnn"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">VisionCoding LLC © 2019</p>
-            </div>
-        </footer>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="assets/js/countdown-timer.js"></script>
+
+    <h1>Old Reddit UI Survey</h2>
+    <a href="https://old.reddit.com/" target="_blank">Visit Reddit Old</a>
+
+    <img src="img/reddit0.png" alt="Reddit Homepage" id="reddit-preview">
+
+    <button id="next-img">Next Image</button>
+
+    <!-- <a href="https://old.reddit.com/" target="_blank"><img src="img/reddit.png" alt="Reddit Homepage" id="reddit-preview"></a> -->
+
+    <h4>Survey Questions</h4>
+
+    <form action="">
+
+        <div class="survey-container">
+            <label for="q0">Date of Birth</label>
+            <input type="date" name="" id="q0">
+        </div>
+
+        <div class="survey-container">
+            <label for="q1">Enter your email</label>
+            <input type="email" name="" id="email">
+        </div>
+
+        <div class="survey-container">
+            <p>Which feafture of Old-Reddit would you consider to have the most positive impact on your experience on
+                the website?</p>
+            <label for="o1">Quick loading times</label>
+            <input type="radio" name="q2" id="o1">
+
+            <label for="o2">Responsive design</label>
+            <input type="radio" name="q2" id="o2">
+
+            <label for="o3">Accessibility to screen readers</label>
+            <input type="radio" name="q2" id="o3">
+
+            <label for="o4">Visual appeal</label>
+            <input type="radio" name="q2" id="o4">
+        </div>
+
+        <div class="survey-container">
+            <label for="q3">How likely are you to recommend a website styled like Old-Reddit to a friend?</label>
+            <select name="" id="q3">
+                <option value="op1">1 - Not very likely</option>
+                <option value="op2">2</option>
+                <option value="op3">3</option>
+                <option value="op4">4</option>
+                <option value="op1">5</option>
+                <option value="op2">6</option>
+                <option value="op3">7</option>
+                <option value="op4">8</option>
+                <option value="op1">9</option>
+                <option value="op2">10 - Very Likely</option>
+            </select>
+        </div>
+
+        <div class="survey-container">
+            <p>What aspects of Old-Reddit do you like the most?</p>
+            <label for="q4-1">Navigation</label>
+            <input type="checkbox" name="" id="q4-1">
+
+            <label for="q4-2">Content Ordering</label>
+            <input type="checkbox" name="" id="q4-2">
+
+            <label for="q4-3">Colors</label>
+            <input type="checkbox" name="" id="q4-3">
+
+            <label for="q4-4">Simplicity</label>
+            <input type="checkbox" name="" id="q4-4">
+        </div>
+
+        <div class="survey-container">
+            <label for="q5">What element of Old Reddit caught your attention first?</label>
+            <input type="text" name="" id="q5">
+        </div>
+
+        <div class="survey-container">
+            <label for="q5">What are your thoughts of Old-Reddit's navigation bar, you can view closer by
+                double-clicking or viewing the second photo of the gallery?</label>
+            <input type="text" name="" id="q5">
+        </div>
+
+        <input type="submit" value="Submit Survey">
+    </form>
+
+    <footer>
+        <div class="signature">
+            <p>Website designed by Tevin Cole, GitHub can be found <a
+                    href="github.com/frostythedev/seg3125-lab1">HERE</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

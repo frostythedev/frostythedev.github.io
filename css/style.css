@@ -1,0 +1,99 @@
+#reddit-preview {
+    width: 500px;
+    height: auto;
+}
+
+#next-img {
+    margin-top: 15px;
+}
+
+body {
+    margin: 0;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+}
+
+
+.signature {
+    text-align: center;
+}
+
+/* Basic styling for the container div */
+.survey-container {
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Styling for the label */
+.survey-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for the input type */
+.survey-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Drop shadow effect on hover */
+.survey-container:hover {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+/* Basic styling for the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+a:visited {
+    color: #007bff; /* Set visited link color to the same as the default link color */
+  }
